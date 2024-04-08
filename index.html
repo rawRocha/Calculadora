@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <title>Calculador com Função Construtora</title>
+  
+  <!-- HTML -->
+  
 
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section class="main">
-
-        <h1>Calculadora</h1>
-
-        <table class="calculadora">
-            <tr>
-                <td colspan="4"><input type="text" class="display"></td>
-            </tr>
-
-            <tr>
-                <td><button class="btn btn-clear">C</button></td>
-                <td><button class="btn btn-num">(</button></td>
-                <td><button class="btn btn-num">)</button></td>
-                <td><button class="btn btn-num">/</button></td>
-            </tr>
-
-            <tr>
-                <td><button class="btn btn-num">7</button></td>
-                <td><button class="btn btn-num">8</button></td>
-                <td><button class="btn btn-num">9</button></td>
-                <td><button class="btn btn-num">*</button></td>
-            </tr>
-
-            <tr>
-                <td><button class="btn btn-num">4</button></td>
-                <td><button class="btn btn-num">5</button></td>
-                <td><button class="btn btn-num">6</button></td>
-                <td><button class="btn btn-num">+</button></td>
-            </tr>
-
-            <tr>
-                <td><button class="btn btn-num">1</button></td>
-                <td><button class="btn btn-num">2</button></td>
-                <td><button class="btn btn-num">3</button></td>
-                <td><button class="btn btn-num">-</button></td>
-            </tr>
-
-            <tr>
-                <td><button class="btn btn-num">.</button></td>
-                <td><button class="btn btn-num">0</button></td>
-                <td><button class="btn btn-del">&laquo;</button></td>
-                <td><button class="btn btn-eq">=</button></td>
-            </tr>
-        </table>
-    </section>
-
-    <script src="assets/js/main.js"></script>
+  <section class="main">
+    <h1>Calculadora</h1>
+    
+    <table class="calculadora" border="0">
+      <tr>
+        <td colspan="4"><input class="display" type="text"></td>
+      </tr>
+      
+      <tr>
+        <td><button class="btn btn-clear" type="submit">C</button></td>
+        <td><button class="btn btn-num" type="submit">(</button></td>
+        <td><button class="btn btn-num" type="submit">)</button></td>
+        <td><button class="btn btn-num" type="submit">/</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class="btn btn-num" type="submit">7</button></td>
+        <td><button class="btn btn-num" type="submit">8</button></td>
+        <td><button class="btn btn-num" type="submit">9</button></td>
+        <td><button class="btn btn-num" type="submit">*</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class="btn btn-num" type="submit">4</button></td>
+        <td><button class="btn btn-num" type="submit">5</button></td>
+        <td><button class="btn btn-num" type="submit">6</button></td>
+        <td><button class="btn btn-num" type="submit">+</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class="btn btn-num" type="submit">1</button></td>
+        <td><button class="btn btn-num" type="submit">2</button></td>
+        <td><button class="btn btn-num" type="submit">3</button></td>
+        <td><button class="btn btn-num" type="submit">-</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class="btn btn-num" type="submit">.</button></td>
+        <td><button class="btn btn-num" type="submit">0</button></td>
+        <td><button class="btn btn-del" type="submit">&laquo;</button></td>
+        <td><button class="btn btn-eq" type="submit">=</button></td>
+      </tr>
+    </table>
+  </section>
+  <section class="historico">
+    <div class="saida-historico">
+      <p>Histórico aqui!</p>
+    </div>
+  </section>
+  <!-- Project -->
+  <script src="main.js"></script>
 </body>
 </html>
