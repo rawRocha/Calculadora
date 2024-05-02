@@ -68,7 +68,7 @@ function Calculadora() {
       conta = eval(conta)
 
       //se conta retornar valor falso, alert() erro.
-      if (!conta) {
+      if (typeof conta !== 'number') {
         alert('Conta Inválida')
       }
 
